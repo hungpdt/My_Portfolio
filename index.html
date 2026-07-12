@@ -3,64 +3,108 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0d1117">
+<meta name="color-scheme" content="dark">
+<meta name="author" content="Phan Dang The Hung">
+<meta name="robots" content="index, follow">
 <title>Phan Dang The Hung — Unity Developer</title>
-<meta name="description" content="Unity Developer with 3+ years building mobile games — live-service features, SDK integration, and solo end-to-end development.">
+<meta name="description" content="Unity Developer with 3+ years of mobile game experience across gameplay systems, live-service features, SDK integration, and build automation.">
 
 <!-- Open Graph: controls the link preview on LinkedIn / Facebook / Zalo, etc.
      These stay in the HTML so previews work even though projects are rendered by JS.
      TODO: set og:url to your live URL, and og:image to a real 1200x630 preview image. -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Phan Dang The Hung — Unity Developer">
-<meta property="og:description" content="Unity Developer with 3+ years building mobile games — live-service features, SDK integration, and solo end-to-end development.">
-<meta property="og:url" content="">
-<meta property="og:image" content="assets/images/og-preview.jpg">
+<meta property="og:description" content="Unity Developer with 3+ years of mobile game experience across gameplay systems, live-service features, SDK integration, and build automation.">
+<!-- Add og:url and og:image after the final public URL and 1200x630 preview are available. -->
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Phan Dang The Hung — Unity Developer">
+<meta name="twitter:description" content="Unity Developer with 3+ years of mobile game experience across gameplay systems, live-service features, SDK integration, and build automation.">
+
+<link rel="preconnect" href="https://img.youtube.com" crossorigin>
+<link rel="preconnect" href="https://www.youtube.com" crossorigin>
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
 <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
-<header class="hero">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Phan Dang The Hung",
+  "jobTitle": "Unity Developer",
+  "email": "mailto:phandthehung@gmail.com",
+  "knowsAbout": [
+    "Unity",
+    "C#",
+    "Mobile game development",
+    "Gameplay programming",
+    "Live-service games",
+    "Firebase Analytics",
+    "Build automation"
+  ],
+  "alumniOf": [
+    { "@type": "Organization", "name": "Gameloft" },
+    { "@type": "Organization", "name": "FPT Software" },
+    { "@type": "EducationalOrganization", "name": "Military Technical Academy" }
+  ]
+}
+</script>
+</head>
+<body id="top">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<div class="nav-shell">
   <nav class="navbar">
-    <a href="#" class="logo">
-      <img src="assets/images/avatar.jpg" alt="" onerror="this.style.display='none'">
+    <a href="#top" class="logo" aria-label="Phan Hung — back to top">
+      <img src="assets/images/avatar.jpg" width="36" height="36" alt="" decoding="async" onerror="this.style.display='none'">
       <span>Phan Hung</span>
     </a>
-    <div class="nav-links">
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+      <span class="menu-icon" aria-hidden="true"></span>
+      <span class="menu-label">Menu</span>
+    </button>
+    <div class="nav-links" id="navLinks">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
+</div>
+
+<header class="hero">
 
   <div class="hero-content">
-    <img class="hero-avatar" src="assets/images/avatar.jpg" alt="Phan Dang The Hung" onerror="this.style.display='none'">
+    <img class="hero-avatar" src="assets/images/avatar.jpg" width="150" height="150" alt="Phan Dang The Hung" decoding="async" fetchpriority="high" onerror="this.style.display='none'">
     <h1>Phan Dang The Hung</h1>
-    <p class="subtitle">Unity Developer · Mobile Games Developer</p>
-    <p class="hero-desc">3+ years of software development, 2+ in mobile games with Unity/C# — from
-      live-service features on titles played by millions, to solo end-to-end development and publishing.</p>
+    <p class="subtitle">Unity Developer · Mobile Games</p>
+    <p class="hero-desc">Unity Developer with 3+ years of mobile game experience, specializing in
+      gameplay systems, live-service features, third-party SDK integration, and build automation.</p>
     <div class="hero-buttons">
       <a href="#projects" class="btn btn-primary">View Projects</a>
-      <a href="assets/CV_Phan_Dang_The_Hung.pdf" class="btn btn-outline">Download CV (PDF)</a>
-      <!-- TODO: put the final CV PDF at assets/CV_Phan_Dang_The_Hung.pdf -->
+      <!-- Remove `hidden` after adding assets/CV_Phan_Dang_The_Hung.pdf. -->
+      <a href="assets/CV_Phan_Dang_The_Hung.pdf" class="btn btn-outline" download hidden>Download CV (PDF)</a>
     </div>
   </div>
 </header>
 
-<main>
+<main id="main-content">
   <!-- [SECTION: ABOUT] -->
   <section id="about" class="section">
     <h2>About Me</h2>
     <p>
-      Unity Developer with 3+ years of software development experience and 2+ years focused on mobile
-      game development using Unity and C#. Experienced in gameplay/UI features, live-service
-      development and maintenance, third-party SDK integration, and production bug fixing.
+      I build and maintain production mobile games with Unity and C#. At Gameloft and NSTAGE, I worked
+      across gameplay, UI, live-service events, analytics, third-party SDKs, and Android/iOS build
+      workflows in collaboration with design, art, QA, LiveOps, and BI teams.
     </p>
     <p>
-      Hands-on with Unity UI Canvas, event systems, Firebase tracking, and ads/analytics SDKs.
-      Comfortable applying practical design patterns such as Observer/Event-driven, State Machine,
-      Strategy, Template Method, and Object Pooling to keep features maintainable and extensible.
+      I focus on turning design requirements into maintainable, production-ready features. My work
+      ranges from owning a mini-game flow and remotely configurable monetization UI to automating
+      build pipelines and independently developing and publishing a 2D mobile game.
     </p>
   </section>
 
@@ -72,61 +116,61 @@
     <div id="projects-list"></div>
   </section>
 
-  <!-- [SECTION: SKILLS] -->
-  <section id="skills" class="section">
-    <h2>Skills &amp; Tools</h2>
-    <div class="skills-grid">
-      <div class="skill-group">
-        <h4>Architecture &amp; Code Quality</h4>
-        <div class="tag-list"><span>OOP</span><span>Design Patterns</span><span>Observer / Event-driven</span><span>State Machine</span><span>Strategy</span><span>Template Method</span><span>Object Pooling</span><span>Debugging</span><span>Refactoring</span></div>
-      </div>
-      <div class="skill-group">
-        <h4>Game Development</h4>
-        <div class="tag-list"><span>Unity</span><span>C#</span><span>Gameplay Programming</span><span>Unity UI Canvas</span><span>Event Systems</span><span>Live-Service Features</span><span>Animation</span><span>Particle Systems</span><span>Physics</span><span>Localization</span></div>
-      </div>
-      <div class="skill-group">
-        <h4>Gameplay / System Experience</h4>
-        <div class="tag-list"><span>Time-Limited Event</span><span>Mini-game Flow</span><span>Shop Mechanics</span><span>IAP Popup</span><span>Achievement System</span><span>Quest System</span><span>Boss Behavior</span><span>Progression Tuning</span></div>
-      </div>
-      <div class="skill-group">
-        <h4>SDKs / Services</h4>
-        <div class="tag-list"><span>Firebase Analytics</span><span>MAX SDK</span><span>IronSource</span><span>Singular SDK</span><span>Google Play Games Services</span></div>
-      </div>
-      <div class="skill-group">
-        <h4>Build &amp; Tools</h4>
-        <div class="tag-list"><span>Git</span><span>Jenkins</span><span>Xcode</span><span>SVN</span><span>Android/iOS Build Workflow</span><span>Python Automation</span><span>Unity Profiler</span></div>
-      </div>
-    </div>
-  </section>
-
   <!-- [SECTION: EXPERIENCE] -->
   <section id="experience" class="section">
     <h2>Experience &amp; Education</h2>
     <div class="timeline">
       <div class="timeline-item">
         <span class="timeline-date">04/2026 – 06/2026</span>
-        <h4>Unity Developer — NSTAGE (Idle Berserker)</h4>
+        <h3>Unity Developer — NSTAGE (Idle Berserker)</h3>
         <p>Built the Magical Anvil mini-game: gameplay flow, UI, VFX, Firebase tracking, design patterns.</p>
       </div>
       <div class="timeline-item">
         <span class="timeline-date">06/2023 – 04/2026</span>
-        <h4>Unity / Game Developer — Gameloft</h4>
+        <h3>Unity / Game Developer — Gameloft</h3>
         <p>Sniper Champions (live-service features, SDKs, build automation) and LEGO Legacy: Heroes Unboxed (gameplay &amp; systems).</p>
       </div>
       <div class="timeline-item">
         <span class="timeline-date">03/2024 – 06/2024</span>
-        <h4>Solo Developer — Dragon Slayer (personal project)</h4>
+        <h3>Solo Developer — Dragon Slayer (personal project)</h3>
         <p>End-to-end development and publishing on Google Play Beta.</p>
       </div>
       <div class="timeline-item">
         <span class="timeline-date">03/2022 – 03/2023</span>
-        <h4>Developer — FPT Software</h4>
+        <h3>Developer — FPT Software</h3>
         <p>Developed and executed unit and behavioral tests using C/C++ and Google Test in a Linux environment to improve software reliability.</p>
       </div>
       <div class="timeline-item">
         <span class="timeline-date">2018 – 2022</span>
-        <h4>Military Technical Academy</h4>
+        <h3>Military Technical Academy</h3>
         <p>Major: Control and Automation Engineering.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- [SECTION: SKILLS] -->
+  <section id="skills" class="section">
+    <h2>Skills &amp; Tools</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Core Development</h3>
+        <div class="tag-list"><span>Unity</span><span>C#</span><span>Gameplay Programming</span><span>Unity UI</span><span>Debugging</span><span>Refactoring</span><span>Unity Profiler</span></div>
+      </div>
+      <div class="skill-group">
+        <h3>Production &amp; Live Service</h3>
+        <div class="tag-list"><span>Live-Service Features</span><span>Remote Configuration</span><span>Analytics Tracking</span><span>Localization</span><span>Android/iOS Builds</span><span>Production Bug Fixing</span></div>
+      </div>
+      <div class="skill-group">
+        <h3>Gameplay &amp; Systems</h3>
+        <div class="tag-list"><span>Time-Limited Events</span><span>Mini-game Flow</span><span>Shop &amp; IAP UI</span><span>Achievements</span><span>Quests</span><span>Boss Behavior</span><span>Progression Tuning</span></div>
+      </div>
+      <div class="skill-group">
+        <h3>SDKs &amp; Services</h3>
+        <div class="tag-list"><span>Firebase Analytics</span><span>MAX SDK</span><span>IronSource</span><span>Singular SDK</span><span>Google Play Games Services</span></div>
+      </div>
+      <div class="skill-group">
+        <h3>Architecture &amp; Tools</h3>
+        <div class="tag-list"><span>OOP</span><span>Event-driven Architecture</span><span>State Machine</span><span>Strategy</span><span>Object Pooling</span><span>Git</span><span>Jenkins</span><span>Python</span><span>Xcode</span></div>
       </div>
     </div>
   </section>
@@ -134,7 +178,7 @@
   <!-- [SECTION: CONTACT] -->
   <section id="contact" class="section contact-section">
     <h2>Contact</h2>
-    <p>Open to opportunities in mobile game development, live-service feature development, and SDK/operations support.</p>
+    <p>Open to Unity Developer opportunities focused on mobile gameplay, live-service systems, and production engineering.</p>
     <div class="contact-links">
       <a href="tel:0981456042">📞 0981 456 042</a>
       <a href="mailto:phandthehung@gmail.com">✉ phandthehung@gmail.com</a>
@@ -149,7 +193,7 @@
 </footer>
 
 <!-- Lightbox: enlarges an image/video when a thumbnail is clicked (shared across all projects) -->
-<div class="lightbox" id="lightbox">
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Media preview" aria-hidden="true">
   <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
   <div class="lightbox-content" id="lightboxContent"></div>
 </div>
